@@ -1,0 +1,274 @@
+
+/* CSS for both the Home and Discover Page */
+
+
+/* HOME NAVBAR HOME NAVBAR HOME NAVBAR HOME NAVBAR HOME NAVBAR HOME NAVBAR HOME NAVBAR HOME NAVBAR HOME NAVBAR */
+/* Styles the div that contains the information above the post pic */
+.post--container {
+    padding: 10px 0px;
+    /* border: solid 1px red; */
+}
+
+.post--topbar--container {
+    margin: 20px 9px 10px 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --background: white;
+    --padding-end: 0px;
+    /* border: solid red 1px; */
+    
+}
+
+
+/* Styles the tile of the page in the NavBar */
+.home--header--name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+/* Contains the buttons located in the NavBar on the Home page */
+.home--btn--container {
+    margin-right: 20px;
+    padding-right: 0;
+}
+
+
+
+/* PIC POST TOP INFORMATION */
+.username--container {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* border: solid red 1px; */
+}
+
+.username--image--tag {
+    margin: 0px 5px;
+    height: 40px;
+    max-width: 50vw;
+    align-self: center;
+    font-weight: 700;
+    color: black;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    font-size: 1rem;
+    /* border: solid 1px red; */
+}
+
+/* Makes button dynamic and grows width to match size of username */
+.username--image--tag--span{
+    font-size: 1.25rem;
+    /* min-width: 50vw; */
+    line-height: 40px;
+    margin-right: auto;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: solid 1px red; */
+}
+
+.small--user--profile--pic::part(image) {
+    object-fit: cover;
+    height: 35px;
+    max-width: 35px;
+    min-width: 35px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+
+
+/* PIC POST */
+/* Contains the buttons located BELOW the post pic */
+.buttons--container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Seperates the buttons container into left and right to apply proper spacing */
+.button--container--left, .button--container--right{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 0px 0px;
+}
+
+/* Buttons located in the right button container */
+.likes--button.right--buttons{
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+ 
+
+/* .icon--buttons {
+    border: solid 1px red;
+} */
+
+
+
+/* PIC POST TEXT */
+/* Image Description located at the bottom of the post  */
+.image--description {
+    padding: 0px 10px;
+    /* border: solid 1px red; */
+}
+
+/* Span to highlight the username within the image description */
+.username--image--description {
+    display: inline-flex;
+    font-weight: 700;
+    text-align: left;
+    max-width: 60vw;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border: solid 1px red; */
+}
+
+
+
+
+
+
+/* DISCOVER NAVBAR DISCOVER NAVBAR DISCOVER NAVBAR DISCOVER NAVBAR DISCOVER NAVBAR DISCOVER NAVBAR DISCOVER NAVBAR */
+.title--load--container {
+    display: flex;
+    align-items: center;
+    margin: 0px 5px 20px 5px;
+    /* border: solid red 1px; */
+}
+
+.title--load {
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+}
+
+.title--load--users {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: right;
+}
+
+.discover--users--link {
+    color:#000000;
+}
+/* END DISCOVER NAVBAR */
+
+
+
+
+/* DISCOVER PAGE STYLES - not shared with Home page */
+.discover--follow--button--container {
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    /* border: solid red 1px; */
+}
+
+.discover--button {
+    height: 30px;
+    width: 100px;
+    --color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    background: #FF4C58;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px #000000;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+}
+
+.discover--button.users {
+    color: white;
+    background: black;
+}
+
+.discover--button:active {
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.discover--button.following{
+    background: #33FF65;
+}
+
+
+
+
+
+/* GENERIC */
+Ion-Button {
+    --ionicon-stroke-width: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.notif--heart--icon {
+    /* border: solid 1px red; */
+    width: 50px;
+}
+
+.notif--badge {
+    order: -1;
+    position: absolute;
+    align-self: flex-start;
+    left: 25px;
+}
+
+.delete--button{
+    color:var(--ion-color-danger)
+}
+
+.no--post--message {
+    margin: 20px;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: black;
+    font-weight: 500;
+}
+
+/* .no--post--message a {
+    text-decoration: none;;
+    font-weight: 700;
+    color: #00C8FF;
+} */
+
+
+/* .no--post--message span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FF4C58;
+} */
+
+/* .no--post--message .novafriends {
+    background-color: #000000;
+    color: #00C8FF;
+    border-radius: 10px;
+    padding: 5px 10px;
+} */
+
+/* .no--post--message .follow {
+    text-transform: none;
+    color:orange;
+} */

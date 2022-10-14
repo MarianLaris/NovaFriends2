@@ -1,0 +1,88 @@
+
+/* USERS USERS USERS (located by clicking the DISCOVER Page top right purple button */
+
+
+/* Title/Header */
+.user--header {
+    margin-bottom: 20px;
+    /* border: solid 1px red; */
+}
+
+/* Styling the text */
+.users--header--name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+/* Each user styling container */
+.users--container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0px 10px 10px 10px;
+    /* border: solid 1px red; */
+}
+
+/* User name container */
+.userpic--username--container {
+    display: flex;
+    align-items: center;
+}
+
+/* User picture */
+.pic--users::part(image) {
+    height: 55px;
+    max-width: 55px;
+    min-width: 55px;
+    object-fit: cover;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+/* STYLES LINK TO THE USER'S PAGE */
+.users--button {
+    margin: 0px 5px 0px 10px;
+    height: 35px;
+    align-self: flex-start;
+    font-weight: 700;
+    color: --ion-primary-color;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    /* border: solid 1px red; */
+}
+
+.username--span {
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 0
+    /* border: solid 1px red; */
+}
+
+.users--name--container  {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: space-between;
+}
+
+.users--name--container p {
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #AAA9A9;
+    text-transform: uppercase;
+    /* border: solid 1px red; */
+}
+
+.users--name--verified {
+    display: flex;
+    align-items: center;
+}
+
+.btn--container {
+    margin-top: 5px;
+    /* border: solid 1px red; */
+}

@@ -1,0 +1,228 @@
+/* ion-content {
+    --keyboard-offset: 0px;
+  } */
+
+.scroll-content {
+    padding-bottom: 0 !important;
+}
+
+.modal-button {
+    color: #00C8FF;
+    font-weight: 700;
+    text-align: left;
+    align-self: flex-start;
+    margin: 5px 0px;
+    height: 25px;
+    --background: white;
+    --background-activated: white;
+    --border-radius: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-button.rename {
+    color: #FF4C58
+}
+
+.modal-button.signout,
+.modal-button.delete,
+.modal-button.password {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#modal-button-right-align {
+    align-self: flex-end;
+}
+
+.settings--info {
+    display: grid;
+    padding: 0 15px;
+    /* grid-template:  30vh 10vh 10vh 7vh 7vh 7vh 4vh 4vh 4vh/ 45vw 45vw; */
+    grid-template-areas:
+        "Img Bio"
+        "Dname Dname"
+        /* "Name Name" */
+        "Email Email"
+        "Password Password"
+        "Logout Logout"
+        "Delete Delete"
+        "Privacy Privacy"
+        "Disclaimer Disclaimer"
+        "Terms Terms"
+
+    ;
+    gap: 1vw;
+    /* justify-content: center; */
+}
+
+
+.settings--bio {
+    grid-area: Bio;
+}
+
+.settings--image {
+    grid-area: Img;
+}
+
+.settings--display--name {
+    grid-area: Dname;
+}
+
+.settings--name {
+    grid-area: Name;
+}
+
+.settings--email {
+    grid-area: Email;
+}
+
+.settings--password {
+    grid-area: Password;
+}
+
+.settings--logout {
+    grid-area: Logout;
+}
+
+.settings--delete {
+    grid-area: Delete;
+}
+
+.settings--privacy {
+    grid-area: Privacy;
+}
+
+.settings--terms {
+    grid-area: Terms;
+}
+
+.settings--disclaimer {
+    grid-area: Disclaimer;
+}
+
+.link {
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #00C8FF;
+}
+
+/*   
+.link:hover {
+    text-decoration: none;
+    color: purple;
+    font-size: 1rem;
+  } */
+
+.settings--info h1 {
+    margin: 0px;
+    /* border: solid 1px red; */
+}
+
+.settings--info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.settings--profile--pic {
+    object-fit: cover;
+    width: 100%;
+    max-width: 45vw;
+    height: 200px;
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+.settings--bio--text {
+    width: 100%;
+    max-width: 45vw;
+    height: 200px;
+    padding: 10px;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    border: none;
+
+}
+
+ion-modal#delete-modal {
+    --height: 20%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+}
+
+ion-modal#delete-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+}
+
+ion-modal#delete-modal ion-toolbar {
+    --background: white;
+    --color: black;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+ion-modal#delete-modal ion-title {
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+
+.delete-modal-button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.delete-modal-button {
+    font-size: 1.5rem;
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    --background-activated: none;
+    --border-width: 2px;
+    --border-radius: 10px;
+    --border-style: solid;
+    --border-color: black;
+    --box-shadow: 3px 3px 0px black;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+}
+
+.delete-modal-button:active {
+    --box-shadow: 1px 1px 0px #000000;
+}
+
+
+.terms--footer {
+    margin: 0;
+    padding: 0;
+    height: 85px;
+    background: #F7F7F7;
+    border-top: 1px solid #DFDFDF;
+}
+
+.terms--button {
+    margin-left: 75vw;
+    margin-top: 10px;
+    --background-color: black;
+    --color: white;
+}
+
+.checkmark {
+    --border-color: #AAA9A9;
+    --border-width: 1px;
+}

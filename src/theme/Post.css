@@ -1,0 +1,342 @@
+/* Contains CSS for any elements that are unique to the Post page, which is mainly styling the comments */
+
+/* Entire Post */
+
+
+.post--header--name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    /* border: solid 1px red; */
+}
+
+.post--header--name span {
+    font-size: 1rem;
+    color: #AAA9A9;
+    text-transform: uppercase;
+}
+
+.post--container {
+    margin-bottom: 5px;
+    padding-top: 0px;
+
+}
+
+.post-time-stamp {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 92%;
+    left: 84%;
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    /* font-weight: 700; */
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.picture--container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.picture--container ion-img {
+    min-height: 300px;
+    background: rgb(226, 226, 226);
+}
+
+
+
+/* COMMENT Container */
+
+.all--comments--container {
+    margin-bottom: 100px;
+}
+
+.all--comments--container h1 {
+    font-size: 1.2rem;
+    margin: 0px 10px 10px 10px;
+}
+
+.comment--container {
+    display: grid;
+    grid-template-areas:
+        "pic username time"
+        "pic comment comment";
+    grid-template-columns: 12% 68% 20%;
+    margin: 0px 10px 20px 10px;
+    /* border: solid 1px red; */
+}
+
+/* PICTURE Wrapper*/
+.pic--wrapper {
+    grid-area: pic;
+    display: flex;
+    margin: 0px;
+    padding: 0;
+    /* border: solid 1px red; */
+}
+
+/* Actual PICTURE */
+.pic--comment::part(image) {
+    height: 35px;
+    max-width: 35px;
+    min-width: 35px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+
+/* USERNAME Wrapper */
+.post--username--container {
+    grid-area: username;
+    display: flex;
+    align-items: center;
+    /* border: solid 1px red; */
+}
+
+/* USERNAME BUTTON LINK associated with comment  */
+.post--username {
+    text-align: left;
+    margin-left: 5px;
+    height: 20px;
+    font-weight: 700;
+    --padding-start: 0;
+    --padding-end: 5px;
+    /* border: solid 1px red; */
+}
+
+.post--username span {
+    text-align: left;
+    max-width: 45vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Styling various nested elements */
+.post--username h1,
+.time p,
+.comment p {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    font-size: 1rem;
+}
+
+/* TIME STAMP */
+.time {
+    grid-area: time;
+    display: flex;
+    justify-content: right;
+    /* border: solid 1px red; */
+}
+
+/* COMMENT TEXT */
+.comment {
+    grid-area: comment;
+    display: flex;
+    margin-left: 5px;
+    /* border: solid 1px red; */
+}
+
+/* TIME STAMP TEXT */
+.time p {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #AAA9A9;
+}
+
+
+.new--post--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 3vw;
+}
+
+.new--post--topbar--container {
+    margin: 10px 9px 5px 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    --background: white;
+    --padding-end: 0px;
+    /* border: solid red 1px; */
+    
+}
+
+.new--post--picture--container {
+    border: solid 3px black;
+    border-radius: 5px;
+    max-width: 75vw;
+    margin-top: 10px;
+}
+
+.new--post--small--profile--pic::part(image) {
+    object-fit: cover;
+    height: 25px;
+    max-width: 25px;
+    min-width: 25px;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.new--post--image {
+    margin: 1vw auto;
+    width: 100%
+}
+
+.new--post--description--text {
+    width: 100%;
+    margin: 3vw 0;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 40px;
+    background-color: #F4F4F4;
+    border: none;
+}
+
+.new--post--font--size--small {
+    font-size: 11px;
+}
+
+.new--post--font--size--small--bottom {
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.margin--right {
+    margin-right: 10px;
+}
+
+.margin--left {
+    margin-left: 5px;
+}
+
+.margin--buttons {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.padding {
+    padding: 0;
+    margin: 0;
+}
+
+.bold {
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+.new--post--length-and-button--container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.new--post--length-and-button--container p{
+    margin-left: 3vw;
+    font-size: 0.9rem;
+    color: #AAA9A9;
+    text-align: center;
+}
+
+.new--post--button {
+    height: 50px;
+    width: 75vw;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    background: #00C8FF;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0px black;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    --color: white;
+}
+
+.post--comment--button {
+    height: 35px;
+    width: 100px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    background: #3AB0FF;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0px black;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    align-self: center;
+}
+
+.post--comment--button:active {
+    box-shadow: 1px 1px 0px #000000;
+}
+
+.post--comment--input {
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 35px;
+    width: 60%;
+    border: none;
+    background-color: #F0F0F0;
+
+}
+
+/* ::placeholder {
+    color: grey;
+} */
+
+.comment--footer {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    height: 85px;
+    background: white;
+    border-top: 1px solid #DFDFDF;
+}
+
+.comment--footer--inside--wrapper {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animate__animated.animate__slideInUp,
+.animate__animated.animate__slideOutDown {
+    --animate-duration: 0.25s;
+}
+
+.Ion-avatar {
+    --border-radius: 5px;
+}
+
+.member-list-username {
+    --color: #000000;
+}
+
+/* .mention-user-list {
+    z-index: 990;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    padding-top: 40px;
+} */

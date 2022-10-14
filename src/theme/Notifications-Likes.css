@@ -1,0 +1,180 @@
+/* NOTIFICATION NOTIFICATION NOTIFICATION NOTIFICATION NOTIFICATION NOTIFICATION NOTIFICATION NOTIFICATION NOTIFICATION */
+
+/* Main Header Div */
+.notif--header {
+    margin-bottom: 20px;
+}
+
+/* Main Header Text */
+.notif--header--name {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+
+ 
+
+
+/* EACH NOTIFICATION STYLING */
+/* Notification div */
+.notif--container {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    /* border: solid 1px red; */
+}
+
+.notif--container.likes {
+    margin: 0px 10px 5px 10px;
+    /* border: solid 1px red; */
+}
+
+/* Div that contains notification text */
+
+.notif--verified--container {
+    display: flex;
+    align-items: center;
+}
+
+.notif--text--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    margin-left: 5px;
+    margin-right: auto;
+    height: 45px;
+    /* border: solid 1px red; */
+}
+
+.notif--text--container.likes {
+    height: 40px;
+    margin-right: 0px;
+}
+
+.text--notif {
+    color: #AAA9A9;
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    align-self: flex-start;
+    /* border: solid 1px red; */
+}
+
+
+/* Username PIC attached to Notification */
+.pic--notif::part(image) {
+    height: 45px;
+    max-width: 45px;
+    min-width: 45px;
+    object-fit: cover;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.pic--notif.likes::part(image) {
+    height: 35px;
+    max-width: 35px;
+    min-width: 35px;
+}
+
+/* Styles each username link */
+.username--button {
+    margin: 0px 5px;
+    max-width: 45vw;
+    height: 2.75vh;
+    align-self: flex-start;
+    font-weight: 700;
+    color: black;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+    font-size: 0.9rem;
+    /* border: solid 1px red; */
+}
+
+.username--button.likes {
+    max-width: 100%;
+    /* border: solid 1px red; */
+}
+
+.username--button--span {
+    padding: 5px 0;
+    font-size: 1rem;
+    max-width: 45vw;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: solid 1px red; */
+}
+
+
+
+/* Username USERNAME attached to Notification */
+/* .username--notif {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+    font-size: 1rem;
+} */
+
+/* FOllOW notification button */
+.button--notif--follow {
+    height: 30px;
+    min-width: 85px;
+    max-width: 85px;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    --background: #FF4C58;
+    --border-style: solid;
+    --border-color: black;
+    --border-width: 2px;
+    --border-radius: 5px;
+    --box-shadow: 3px 3px 0px black;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+}
+
+.button--notif--follow.following {
+    --background: #00C8FF;
+}
+
+.button--notif--follow.blocked {
+    --background: black;
+}
+
+
+/* when clicked */
+.button--notif--follow:active,
+.button--notif--following:active {
+    box-shadow: 1px 1px 0px #000000;
+}
+
+
+
+/* LIKES LIKES LIKES */
+
+.likes--username {
+    max-width: 70vw;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: solid 1px red; */
+}
+
+/* .notif--go--to--button {
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --padding-start: 0;
+    --padding-end: 0;
+} */

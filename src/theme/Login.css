@@ -1,0 +1,234 @@
+
+.page {
+    --ion-background-color: #FF4C58;
+}
+
+.page--container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh;
+    width: 100vw; */
+    align-items: center;
+}
+
+
+.login--forgot--password {
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #00C8FF;
+}
+
+.logo {
+    width: 90vw;
+    object-fit: contain;
+    margin: 0;
+    object-position: center;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+}
+
+
+.small--container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    justify-content: right;
+}
+
+.small--container p {
+    margin-right: 15px;
+    top: 350px;
+}
+.login--button--small {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    --padding-end: 0;
+    --padding-start: 0;
+    /* border: solid 1px red; */
+}
+
+.error--text {
+    margin-left: 20px;
+    color: red;
+}
+
+.slogan--container {
+    width: 250px;
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.slogan--container h1 {
+    color: black;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.slogan--container h1 span {
+    color: white;
+}
+
+
+
+.resend--container {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    text-align: right;
+    width: 80vw;
+    /* border: solid 1px red; */
+}
+
+
+.description {
+    margin-bottom: 20px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.description span {
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.description .spam {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #00C8FF;
+}
+
+.resend--button {
+    width: 200px;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --color: white;
+    --background: #FF4C58;
+    --border-color: black;
+    --border-style: solid;
+    --border-width: 3px;
+    --border-radius: 10px;
+    --box-shadow: 4px 4px 0px black;
+
+}
+
+.login--button {
+    width: 250px;
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    --padding-top: 10px;
+    --padding-bottom: 10px;
+    --color: white;
+    --background: #FF4C58;
+    --border-color: black;
+    --border-style: solid;
+    --border-width: 3px;
+    --border-radius: 10px;
+    --box-shadow: 4px 4px 0px black;
+    
+}
+
+.login--button.one {
+    --background: white;
+    color: black;
+}
+
+.login--button.two {
+    --background: black;
+    /* --border-color: white;
+    --box-shadow: 3px 3px 0px white; */
+}
+
+.login--button.register {
+    --background: #00C8FF;
+    /* --border-color: white;
+    --box-shadow: 3px 3px 0px white; */
+}
+
+.login--button:active {
+    --box-shadow:1px 1px 0px black;
+}
+
+.code--label {
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+.glow-on, .login {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    width: 250px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 40px;
+  }
+  
+  .glow-on:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    /* filter: blur(5px); */
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 12px;
+    border: solid 2px black;
+    box-shadow: 6px 6px 0px black;
+  }
+
+  .login:before {
+    content: '';
+    background: black;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    /* filter: blur(5px); */
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 12px;
+    border: solid 2px black;
+    box-shadow: 6px 6px 0px #00C8FF;
+  }
+  
+  @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
+

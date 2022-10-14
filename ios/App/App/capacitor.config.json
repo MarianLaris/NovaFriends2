@@ -1,0 +1,22 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "NovaFriends",
+	"webDir": "build",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"PushNotifications": {
+			"presentationOptions": [
+				"badge",
+				"sound",
+				"alert"
+			]
+		},
+		"CodePush": {
+			"IOS_DEPLOY_KEY": "c08e5961-b8ef-4a5e-99d0-e0e41173231a",
+			"IOS_PUBLIC_KEY": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsaS6xWL8LcCzUYuCkyQC\n5VyMddakIUQ1/+nNTEr3fJ+8x11LWUApbbECKf+ADvIUvtHzlEEihEJZr8rsY0Wz\n0nd/YSpbtTsikw7MUTIL19pB9J1+mgJ/3K2Zvm39+PMklIl4x/p+SRMNO6E3WxU9\nFrrL7dRnqL81G1M7AQ47H1dQ1sfPgHWvHGQRD/f7MXcwe/P6I55O9OOVXY01lAL/\nFw/DtTpRyAQ8SyCSsKbOTXOLxAdXWEUhucU751ZcqzM8fJ94iJtxgsKeIyguAboG\nEfooJDVIpZCYZxDu5efXxyqAh/2a6YuSMxx8R3SZbLu/2jJYWHXlUPaKGPU4GZVl\nnQIDAQAB\n-----END PUBLIC KEY-----",
+			"ANDROID_DEPLOY_KEY": "YOUR_ANDROID_DEPLOYMENT_KEY",
+			"ANDROID_PUBLIC_KEY": "YOUR_GENERATED_SECRET_KEY",
+			"SERVER_URL": "https://codepush.appcenter.ms/"
+		}
+	}
+}
